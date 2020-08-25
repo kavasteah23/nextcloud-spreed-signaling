@@ -1,4 +1,7 @@
-# Spreed standalone signaling server
+# Spreed standalone signaling server (*High Performance Backend*)
+
+This repository is fork of Strukturag Nextcloud spreed signaling server repo.
+
 
 ![Build Status](https://github.com/strukturag/nextcloud-spreed-signaling/workflows/test/badge.svg)
 
@@ -34,7 +37,7 @@ Afterwards the binary is created as `bin/signaling`.
 
 A default configuration file is included as `server.conf.in`. Copy this to
 `server.conf` and adjust as necessary for the local setup. See the file for
-comments about the different parameters that can be changed.
+comments about the different parameters that can be changed. 
 
 
 ## Running
@@ -89,7 +92,7 @@ systemctl start signaling.service
 
 You will likely have to adjust the Janus command line options depending on the exact network configuration on your server. Refer to [Setup of Janus](#setup-of-janus) and the Janus documentation for how to configure your Janus server.
 
-Copy `server.conf.in` to `server.conf` and adjust it to your liking. 
+Copy `server.conf.in` to `server.conf` and adjust it to your liking. Also copy `turnserver.conf.in` to `turnserver.conf` for turn server and `nginx.conf.in` to `nginx.conf` for reverse proxy configuration.
 
 If you're using the [docker-compose.yml](docker-compose.yml) configuration as is, the MCU Url must be set to `ws://localhost:8188`, the NATS Url must be set to `nats://localhost:4222`, and TURN Servers must be set to `turn:localhost:3478?transport=udp,turn:localhost:3478?transport=tcp`.
 

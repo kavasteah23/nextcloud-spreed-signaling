@@ -1,0 +1,14 @@
+listening-port=your-port
+fingerprint
+# lt-cred-mech
+use-auth-secret
+listening-ip=your-ip
+relay-ip=your-ip
+static-auth-secret=your-secret
+realm=your-domain
+total-quota=100
+bps-capacity=0
+stale-nonce
+cipher-list="ECDH+AESGCM:DH+AESGCM:ECDH+AES256:DH+AES256:ECDH+AES128:DH+AES:ECDH+3DES:DH+3DES:RSA+AES:RSA+3DES:!ADH:!AECDH:!MD5"
+# no-loopback-peers
+no-multicast-peers

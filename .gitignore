@@ -10,3 +10,5 @@ vendor/
 cover.out
 proxy.conf
 server.conf
+turnserver.conf
+nginx.conf
